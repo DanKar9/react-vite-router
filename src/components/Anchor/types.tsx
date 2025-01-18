@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import { AnchorHTMLAttributes,FunctionComponent,MouseEvent } from "react";
 import { AnchorProps } from "./Anchor";
 import { AnchorContext } from './AnchorContext.tsx';
 
@@ -15,3 +15,12 @@ export type AnchorProviderProps = AnchorContextType & {
 	children: React.ReactNode;
 };
 
+
+export type LinkValue = string | ((event: MouseEvent<HTMLAnchorElement>) => void);
+
+ export type AnchorProps = Omit<
+ AnchorHTMLAttributes<HTMLAnchorElement>,
+ 'href'
+> & {
+	href?: LinkValue;
+};
