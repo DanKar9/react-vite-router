@@ -1,7 +1,6 @@
 
-
 .button {
-	font-family: 'Nunito Sans', 'Helvetica Neue', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 	padding: 0.5em 1em;
 	color: white;
 	border: 2px solid transparent;
@@ -16,20 +15,8 @@
 }
 .outline {
 	background-color: transparent;
-	color: $buttonPrimaryDark;
-	border: 1px solid $buttonOutlineLight;
-	&:hover:not(:disabled) {
-		color: $accent;
-		border-color: $accent;
 	}
-	&:active:not(:disabled) {
-		color: $accentLight;
-		border-color: $accentLight;
-	}
-	&:focus:not(:disabled) {
-		outline: 2px solid $buttonOutlineDark;
-	}
-}
+
 
 .link{
     font-weight: 500;
