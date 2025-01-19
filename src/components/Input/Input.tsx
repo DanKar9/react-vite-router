@@ -2,13 +2,9 @@ import clsx from 'clsx';
 import { ChangeEvent, ReactElement } from "react";
 import styles from './Input.module.scss';
 import { InputHTMLAttributes} from 'react';
+import {InputProps} from './types.tsx'
 
 
-
-export type InputProps = {
-	value?: string;
-	onChange?: (value:string) => void;
-} & InputHTMLAttributes<HTMLInputElement>
 
 export const Input = ({className, ...props}:InputProps) => {
     return <input {...props}/>
