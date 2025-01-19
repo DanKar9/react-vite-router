@@ -1,6 +1,8 @@
+import {FunctionComponent} from 'react'
 
+export type FormTag = 'form' | Funcion Component
 
 export interface FormProps {
 	children: React.ReactNode;
-	onSubmit: (e: React.FormEvent) => void;
+	Tag?: FormTag;
 }
