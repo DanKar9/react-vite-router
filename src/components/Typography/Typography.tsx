@@ -19,5 +19,11 @@ const withTypography = (defaults: TypographyProps) => {
         )
 	}
 }
-export const Text = withTypography("span");
-export const Title = withTypography("h3");
+export const Text = withTypography({
+    Tag: 'span',
+    variant: 'variant'
+});
+export const Title = withTypography({
+    Tag: 'h3',
+    variant: 'title'
+});
