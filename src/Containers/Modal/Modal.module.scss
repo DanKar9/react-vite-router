@@ -1,4 +1,9 @@
-
+.modal {
+	width: 500px;
+	position: relative;
+	background-color: $backgroundColor;
+	border-radius: 10px;
+}
 
 .overlay {
 	z-index: 1;
@@ -13,13 +18,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.modal {
-	width: 500px;
-	position: relative;
-	background-color: $backgroundColor;
-	border-radius: 10px;
 }
 
 
