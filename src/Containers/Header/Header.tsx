@@ -4,21 +4,9 @@ import clsx from 'clsx';
 import styles from './Header.module.scss';
 import { Anchor } from '@/components/Anchor/Anchor.tsx';
 import {List} from '../List.tsx'
+import {HeaderProps} from '../types.tsx'
 
-export type NavLink = {
-	label: string | ReactNode;
-	href: string;
-};
 
-export type HeaderProps = {
-  className?: string;
-	navigation: NavLink[];
-	children?: ReactNode;
-};
-
-function map() {
-	
-}
 export const Header: FunctionComponent<HeaderProps> = ({className,navigation,children,}: HeaderProps) => {
 	return (
 		<header className={clsx(styles.header, className, )}>
