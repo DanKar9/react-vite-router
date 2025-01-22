@@ -4,6 +4,6 @@ export interface RegisterData {
 
 export const gerRegisterApi = (): Promise<RegistrerData> => {
 	return Promise.resolve({
-		message: 'Registration',
+		message: 'Registration resolve',
 	});
 };

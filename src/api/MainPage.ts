@@ -1,9 +1,9 @@
-export interface MainPageData {
+export interface MainData {
 	message: string;
 }
 
-export const mainPageData = (): Promise<MainPageData> => {
+export const getMainApi = (): Promise<MainData> => {
 	return Promise.resolve({
-		message: 'Main data',
+		message: 'Main resolve',
 	});
 };
