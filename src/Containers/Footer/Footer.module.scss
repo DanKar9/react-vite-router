@@ -1,0 +1,44 @@
+@use '@styles/variables' as *;
+@use '@styles/mixins/common/layout' as *;
+
+.footer {
+	@include centered;
+	width: 100%;
+	background-color: #2e3b47;
+	color: #fff;
+}
+
+.container {
+	@include container;
+	padding: 80px 0;
+}
+
+
+.nav {
+	.nav_content {
+		display: flex;
+		gap: 10px;
+		padding: 0;
+		height: $menuLineHeight;
+	}
+
+	.link {
+		list-style: none;
+
+		a {
+			display: block;
+			color: var(--link);
+			font-weight: $fontWeightMedium;
+			line-height: $menuLineHeight;
+			transition: $transition;
+			border-bottom: 3px solid transparent;
+
+			&:hover {
+				color: $primary;
+				border-color: $primary;
+			}
+		}
+	}
+
+	
+}
