@@ -1,4 +1,4 @@
-@use '@styles/variables' as *;
+
 
 .layout {
   display: flex;
@@ -9,6 +9,6 @@
 .content {
   flex-grow: 1;
   padding: 30px;
-  background-color: $backgroundColor;
+  background-color: rgb(51, 42, 42);
   width: 100%;
 }

@@ -1,6 +1,6 @@
 
 import { useAnchor, useLinkProps } from './AnchorContext';
-import { AnchorProps } from "@/components/Anchor/types.tsx";
+import { AnchorProps } from "../components/Anchor/types.tsx";
 
 
 export function Anchor({ href, children, ...props }: AnchorProps) {

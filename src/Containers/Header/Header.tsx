@@ -1,9 +1,9 @@
-import { ReactNode } from "react";
+
 import { FunctionComponent, ReactNode } from 'react';
 import clsx from 'clsx';
 import styles from './Header.module.scss';
 import { Anchor } from '@/components/Anchor/Anchor.tsx';
-import {List} from '../List.tsx'
+import {List} from '../List/List.tsx'
 import {HeaderProps} from '../types.tsx'
 
 
@@ -13,7 +13,10 @@ export const Header: FunctionComponent<HeaderProps> = ({className,navigation,chi
 			<div className={styles.container}>
 				<Anchor href="/"/>
 				<nav className={clsx(styles.nav)}>
-					<List links={list.map(el=>({url: el.href, linkTitle: el.label}))}></List>
+				<List links={[{ label: 'Home', href: '/' },
+				{ label: 'Sign Up', href: '/register' },
+				{ label: 'Sign In', href: '/login' }
+			]} />
 				</nav>
 				<nav className={styles.controls}>{children}</nav>
 			</div>

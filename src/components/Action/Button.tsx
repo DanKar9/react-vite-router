@@ -1,8 +1,6 @@
 import clsx from 'clsx';
 import styles from './Button.module.scss';
 import { ReactNode } from "react";
-import { ButtonTag, ButtonType, ButtonVariant } from "./types";
-import { ReactNode } from 'react';
 import { ActionTag, ButtonType, ButtonVariant } from './types';
 import { Anchor } from '../Anchor/Anchor';
 

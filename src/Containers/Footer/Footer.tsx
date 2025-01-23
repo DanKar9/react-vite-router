@@ -1,19 +1,22 @@
 import clsx from 'clsx';
 import styles from './Footer.module.scss';
-import { Anchor } from '@/components/Anchor/Anchor';
+import { Anchor } from '../../components/Anchor/Anchor';
 import {FooterProps} from '../types.tsx'
+import {List} from '../List/List.tsx'
 
 
-export function Footer({className,navigation,children}: FooterProps) {
+export const Footer =({className,columns}: FooterProps) => {
 	return (
         <footer className={clsx(styles.footer, className, )}>
         <div className={styles.container}>
-            <Anchor href="/"/>
-            <nav className={clsx(styles.nav)}>
-                <List links={list.map(el=>({url: el.href, linkTitle: el.label}))}></List>
-            </nav>
-            <nav className={styles.controls}>{children}</nav>
-        </div>
+				<Anchor href="/"/>
+				<nav className={clsx(styles.nav)}>
+				<List links={[{ label: 'Home', href: '/' },
+				{ label: 'Sign Up', href: '/register' },
+				{ label: 'Sign In', href: '/login' }
+			]} />
+				</nav>
+			</div>
         </footer>
 
 	);

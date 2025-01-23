@@ -1,9 +1,9 @@
 
 import { FunctionComponent } from "react";
-import { Footer } from "./Footer/Footer";
+import { Footer } from "../Footer/Footer";
 import clsx from "clsx";
 import styles from './Layout.module.scss';
-import { Header } from "./Header/Header";
+import { Header } from "../Header/Header";
 import {LayoutProps} from './types.tsx'
 
 

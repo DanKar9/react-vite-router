@@ -1,0 +1,29 @@
+
+
+.container {
+  display: flex;
+  min-width: 300px;
+  gap:30px;
+  flex-direction:row;
+}
+
+.label {
+  width: 50%;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid rgb(32, 12, 92);
+  border-radius: 5px;
+  padding: 10px 0;
+  margin: 10px 10px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.input {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+}

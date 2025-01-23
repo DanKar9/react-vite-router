@@ -1,5 +1,6 @@
-import styles from './Text.module.scss';
-import { TypographyProps,TypographyVariants } from "@/components/Typography/types.tsx";
+import clsx from 'clsx'
+import styles from './Typeography.module.scss'
+import { TypographyProps,TypographyVariants } from "../types.tsx";
 
 
 
@@ -15,7 +16,7 @@ const withTypography = (defaults: TypographyProps) => {
 		return (
         <Tag {...rest} className={clsx(styles.container, className)}>
 			{children}
-		</Tag>;
+		</Tag>
         )
 	}
 }

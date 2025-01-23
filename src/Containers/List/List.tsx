@@ -1,6 +1,7 @@
 
 import { ReactNode } from 'react';
 import {ListProps} from '../types.tsx'
+import { Anchor } from "../../components/Anchor/Anchor";
 
 export const List = ({ links, className }: ListProps) => {
 	return (
@@ -8,7 +9,6 @@ export const List = ({ links, className }: ListProps) => {
 			{links.map((link, index) => (
 				<li key={index}>
 					<Anchor href={link.url}>
-						{link.linkIcon}
 						<span>{link.linkTitle}</span>
 					</Anchor>
 				</li>
